@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitt första GitHub-projekt</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #24292e;
+            color: white;
+            padding: 40px;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .kort {
+            background-color: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000015;
+        }
+
+        button {
+            background-color: #238636;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2ea043;
+        }
+
+        footer {
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🚀 Mitt första GitHub-projekt</h1>
+        <p>Jag lär mig HTML, CSS och GitHub!</p>
+    </header>
+
+    <main>
+        <div class="kort">
+            <h2>👋 Hej världen!</h2>
+            <p>
+                Det här är min första webbsida.
+                Jag har skapat den i Visual Studio Code.
+            </p>
+        </div>
+
+        <div class="kort">
+            <h2>💻 Vad jag lär mig</h2>
+            <p>HTML - bygger webbsidans struktur.</p>
+            <p>CSS - gör webbsidan snygg.</p>
+            <p>Git - håller reda på ändringar.</p>
+            <p>GitHub - lagrar mitt projekt online.</p>
+        </div>
+
+        <div class="kort">
+            <h2>🎉 Testa JavaScript</h2>
+            <p>Klicka på knappen!</p>
+
+            <button onclick="visaMeddelande()">
+                Klicka här!
+            </button>
+
+            <p id="meddelande"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Skapad av Danne © 2026</p>
+    </footer>
+
+    <script>
+        function visaMeddelande() {
+            document.getElementById("meddelande").innerText =
+                "🎉 Grattis! JavaScript fungerar!";
+        }
+    </script>
+
+</body>
+</html>
